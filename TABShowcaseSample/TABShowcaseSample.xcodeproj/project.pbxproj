@@ -19,6 +19,9 @@
 		4EB00B0823EC57C80078FFEE /* JSONSchemaSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B0223EC57C70078FFEE /* JSONSchemaSupport.swift */; };
 		4EB00B0B23EC57C80078FFEE /* CaseStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B0523EC57C70078FFEE /* CaseStudy.swift */; };
 		4EB00B0C23EC57C80078FFEE /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B0623EC57C80078FFEE /* Section.swift */; };
+		4EB00B0F23EC5F340078FFEE /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B0E23EC5F340078FFEE /* Networking.swift */; };
+		4EB00B1123EC5F430078FFEE /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B1023EC5F430078FFEE /* GitHubAPI.swift */; };
+		4EB00B1323EC5F510078FFEE /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B1223EC5F510078FFEE /* EndpointType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		4EB00B0223EC57C70078FFEE /* JSONSchemaSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSchemaSupport.swift; sourceTree = "<group>"; };
 		4EB00B0523EC57C70078FFEE /* CaseStudy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseStudy.swift; sourceTree = "<group>"; };
 		4EB00B0623EC57C80078FFEE /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		4EB00B0E23EC5F340078FFEE /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		4EB00B1023EC5F430078FFEE /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		4EB00B1223EC5F510078FFEE /* EndpointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +182,9 @@
 		4EB00AEE23EC52570078FFEE /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				4EB00B0E23EC5F340078FFEE /* Networking.swift */,
+				4EB00B1023EC5F430078FFEE /* GitHubAPI.swift */,
+				4EB00B1223EC5F510078FFEE /* EndpointType.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -319,9 +328,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EB00B1323EC5F510078FFEE /* EndpointType.swift in Sources */,
 				4EB00B0C23EC57C80078FFEE /* Section.swift in Sources */,
+				4EB00B1123EC5F430078FFEE /* GitHubAPI.swift in Sources */,
 				4EB00B0823EC57C80078FFEE /* JSONSchemaSupport.swift in Sources */,
 				4EB00ABF23EC51C50078FFEE /* ViewController.swift in Sources */,
+				4EB00B0F23EC5F340078FFEE /* Networking.swift in Sources */,
 				4EB00ABB23EC51C50078FFEE /* AppDelegate.swift in Sources */,
 				4EB00ABD23EC51C50078FFEE /* SceneDelegate.swift in Sources */,
 				4EB00B0723EC57C80078FFEE /* BodyElement.swift in Sources */,
