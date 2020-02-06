@@ -31,5 +31,4 @@ class CaseStudyTableViewCell: UITableViewCell {
             clientLabel.text = viewModel.client
         }
     }
-
 }

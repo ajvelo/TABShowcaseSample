@@ -44,12 +44,12 @@ class CaseStudyTableViewController: UITableViewController {
         return cell
     }
 
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let destionationViewController = segue.destination as? UserViewController,
-//            let selectionIndexPath = tableView.indexPathForSelectedRow {
-//            let userLogin = viewModel.selectedUserLogin(index: selectionIndexPath.row)
-//            destionationViewController.userLogin = userLogin
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destinationViewController = segue.destination as? SectionsTableViewController,
+            let selectionIndexPath = tableView.indexPathForSelectedRow {
+            let caseStudySections = viewModel.selectedCaseStudy(index: selectionIndexPath.row)?.sections
+            destinationViewController.sections = caseStudySections
+        }
+    }
 }
 

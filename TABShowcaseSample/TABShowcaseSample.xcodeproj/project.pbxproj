@@ -27,6 +27,9 @@
 		4EB00B1C23EC70BA0078FFEE /* CaseStudiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B1B23EC70BA0078FFEE /* CaseStudiesViewModel.swift */; };
 		4EB00B1E23EC720C0078FFEE /* CaseStudiesCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B1D23EC720C0078FFEE /* CaseStudiesCellViewModel.swift */; };
 		4EB00B2123EC74340078FFEE /* CaseStudyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B2023EC74340078FFEE /* CaseStudyTableViewCell.swift */; };
+		4EB00B2323EC8C3B0078FFEE /* SectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B2223EC8C3B0078FFEE /* SectionsTableViewController.swift */; };
+		4EB00B2523EC8DD00078FFEE /* CaseStudySectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B2423EC8DD00078FFEE /* CaseStudySectionTableViewCell.swift */; };
+		4EB00B2723EC8E1B0078FFEE /* CaseStudiesSectionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B2623EC8E1B0078FFEE /* CaseStudiesSectionCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,9 @@
 		4EB00B1B23EC70BA0078FFEE /* CaseStudiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudiesViewModel.swift; sourceTree = "<group>"; };
 		4EB00B1D23EC720C0078FFEE /* CaseStudiesCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudiesCellViewModel.swift; sourceTree = "<group>"; };
 		4EB00B2023EC74340078FFEE /* CaseStudyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudyTableViewCell.swift; sourceTree = "<group>"; };
+		4EB00B2223EC8C3B0078FFEE /* SectionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsTableViewController.swift; sourceTree = "<group>"; };
+		4EB00B2423EC8DD00078FFEE /* CaseStudySectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudySectionTableViewCell.swift; sourceTree = "<group>"; };
+		4EB00B2623EC8E1B0078FFEE /* CaseStudiesSectionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudiesSectionCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +167,7 @@
 			children = (
 				4EB00B1B23EC70BA0078FFEE /* CaseStudiesViewModel.swift */,
 				4EB00B1D23EC720C0078FFEE /* CaseStudiesCellViewModel.swift */,
+				4EB00B2623EC8E1B0078FFEE /* CaseStudiesSectionCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -180,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				4EB00ABE23EC51C50078FFEE /* CaseStudyTableViewController.swift */,
+				4EB00B2223EC8C3B0078FFEE /* SectionsTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -189,6 +197,7 @@
 			children = (
 				4EB00B1F23EC74200078FFEE /* Storyboards */,
 				4EB00B2023EC74340078FFEE /* CaseStudyTableViewCell.swift */,
+				4EB00B2423EC8DD00078FFEE /* CaseStudySectionTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -359,7 +368,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EB00B2723EC8E1B0078FFEE /* CaseStudiesSectionCellViewModel.swift in Sources */,
 				4EB00B1323EC5F510078FFEE /* EndpointType.swift in Sources */,
+				4EB00B2323EC8C3B0078FFEE /* SectionsTableViewController.swift in Sources */,
+				4EB00B2523EC8DD00078FFEE /* CaseStudySectionTableViewCell.swift in Sources */,
 				4EB00B1A23EC6BD80078FFEE /* URLSessionTaskExt.swift in Sources */,
 				4EB00B1E23EC720C0078FFEE /* CaseStudiesCellViewModel.swift in Sources */,
 				4EB00B1C23EC70BA0078FFEE /* CaseStudiesViewModel.swift in Sources */,
