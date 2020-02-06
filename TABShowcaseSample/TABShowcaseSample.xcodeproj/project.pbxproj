@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4EB00ABB23EC51C50078FFEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00ABA23EC51C50078FFEE /* AppDelegate.swift */; };
 		4EB00ABD23EC51C50078FFEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00ABC23EC51C50078FFEE /* SceneDelegate.swift */; };
-		4EB00ABF23EC51C50078FFEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00ABE23EC51C50078FFEE /* ViewController.swift */; };
+		4EB00ABF23EC51C50078FFEE /* CaseStudyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00ABE23EC51C50078FFEE /* CaseStudyTableViewController.swift */; };
 		4EB00AC223EC51C50078FFEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB00AC023EC51C50078FFEE /* Main.storyboard */; };
 		4EB00AC423EC51CA0078FFEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB00AC323EC51CA0078FFEE /* Assets.xcassets */; };
 		4EB00AC723EC51CA0078FFEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB00AC523EC51CA0078FFEE /* LaunchScreen.storyboard */; };
@@ -24,6 +24,9 @@
 		4EB00B1323EC5F510078FFEE /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B1223EC5F510078FFEE /* EndpointType.swift */; };
 		4EB00B1723EC6B2D0078FFEE /* CaseStudies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B1623EC6B2D0078FFEE /* CaseStudies.swift */; };
 		4EB00B1A23EC6BD80078FFEE /* URLSessionTaskExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B1923EC6BD80078FFEE /* URLSessionTaskExt.swift */; };
+		4EB00B1C23EC70BA0078FFEE /* CaseStudiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B1B23EC70BA0078FFEE /* CaseStudiesViewModel.swift */; };
+		4EB00B1E23EC720C0078FFEE /* CaseStudiesCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B1D23EC720C0078FFEE /* CaseStudiesCellViewModel.swift */; };
+		4EB00B2123EC74340078FFEE /* CaseStudyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B2023EC74340078FFEE /* CaseStudyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +50,7 @@
 		4EB00AB723EC51C50078FFEE /* TABShowcaseSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TABShowcaseSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB00ABA23EC51C50078FFEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EB00ABC23EC51C50078FFEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4EB00ABE23EC51C50078FFEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4EB00ABE23EC51C50078FFEE /* CaseStudyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudyTableViewController.swift; sourceTree = "<group>"; };
 		4EB00AC123EC51C50078FFEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4EB00AC323EC51CA0078FFEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EB00AC623EC51CA0078FFEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,6 +70,9 @@
 		4EB00B1223EC5F510078FFEE /* EndpointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
 		4EB00B1623EC6B2D0078FFEE /* CaseStudies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudies.swift; sourceTree = "<group>"; };
 		4EB00B1923EC6BD80078FFEE /* URLSessionTaskExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionTaskExt.swift; sourceTree = "<group>"; };
+		4EB00B1B23EC70BA0078FFEE /* CaseStudiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudiesViewModel.swift; sourceTree = "<group>"; };
+		4EB00B1D23EC720C0078FFEE /* CaseStudiesCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudiesCellViewModel.swift; sourceTree = "<group>"; };
+		4EB00B2023EC74340078FFEE /* CaseStudyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +159,8 @@
 		4EB00AEA23EC52310078FFEE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4EB00B1B23EC70BA0078FFEE /* CaseStudiesViewModel.swift */,
+				4EB00B1D23EC720C0078FFEE /* CaseStudiesCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -171,7 +179,7 @@
 		4EB00AEC23EC52420078FFEE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4EB00ABE23EC51C50078FFEE /* ViewController.swift */,
+				4EB00ABE23EC51C50078FFEE /* CaseStudyTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -179,8 +187,8 @@
 		4EB00AED23EC524E0078FFEE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4EB00AC023EC51C50078FFEE /* Main.storyboard */,
-				4EB00AC523EC51CA0078FFEE /* LaunchScreen.storyboard */,
+				4EB00B1F23EC74200078FFEE /* Storyboards */,
+				4EB00B2023EC74340078FFEE /* CaseStudyTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -209,6 +217,15 @@
 				4EB00B1923EC6BD80078FFEE /* URLSessionTaskExt.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4EB00B1F23EC74200078FFEE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4EB00AC023EC51C50078FFEE /* Main.storyboard */,
+				4EB00AC523EC51CA0078FFEE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,13 +361,16 @@
 			files = (
 				4EB00B1323EC5F510078FFEE /* EndpointType.swift in Sources */,
 				4EB00B1A23EC6BD80078FFEE /* URLSessionTaskExt.swift in Sources */,
+				4EB00B1E23EC720C0078FFEE /* CaseStudiesCellViewModel.swift in Sources */,
+				4EB00B1C23EC70BA0078FFEE /* CaseStudiesViewModel.swift in Sources */,
 				4EB00B0C23EC57C80078FFEE /* Section.swift in Sources */,
 				4EB00B1123EC5F430078FFEE /* GitHubAPI.swift in Sources */,
 				4EB00B0823EC57C80078FFEE /* JSONSchemaSupport.swift in Sources */,
-				4EB00ABF23EC51C50078FFEE /* ViewController.swift in Sources */,
+				4EB00ABF23EC51C50078FFEE /* CaseStudyTableViewController.swift in Sources */,
 				4EB00B0F23EC5F340078FFEE /* Networking.swift in Sources */,
 				4EB00ABB23EC51C50078FFEE /* AppDelegate.swift in Sources */,
 				4EB00ABD23EC51C50078FFEE /* SceneDelegate.swift in Sources */,
+				4EB00B2123EC74340078FFEE /* CaseStudyTableViewCell.swift in Sources */,
 				4EB00B0723EC57C80078FFEE /* BodyElement.swift in Sources */,
 				4EB00B1723EC6B2D0078FFEE /* CaseStudies.swift in Sources */,
 				4EB00B0B23EC57C80078FFEE /* CaseStudy.swift in Sources */,

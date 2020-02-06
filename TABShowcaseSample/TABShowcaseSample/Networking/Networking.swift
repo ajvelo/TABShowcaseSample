@@ -11,13 +11,15 @@ import Foundation
 struct Networking {
 
     func performNetworkTask(endpoint: GitHubAPI,
-                            completion: ((_ success: Bool, _ response: CaseStudies?) -> Void)?) {
+                            completion: @escaping ((_ success: Bool, _ response: CaseStudies?) -> Void)) {
         guard let urlString = endpoint.baseURL.appendingPathComponent(endpoint.path).absoluteString.removingPercentEncoding else { return }
         guard let url = URL(string: urlString) else { return }
 
         let task = URLSession.shared.caseStudiesTask(with: url) { caseStudies, response, error in
             if let json = caseStudies {
-                completion?(true, json)
+                completion(true, json)
+            } else {
+                completion(false, nil)
             }
         }
         task.resume()
