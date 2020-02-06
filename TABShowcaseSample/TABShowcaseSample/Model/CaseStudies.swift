@@ -1,5 +1,5 @@
 //
-//  Section.swift
+//  CaseStudies.swift
 //  TABShowcaseSample
 //
 //  Created by Andreas Velounias on 06/02/2020.
@@ -8,22 +8,20 @@
 
 import Foundation
 
-// MARK: - Section
-struct Section: Codable {
-    let title: String?
-    let bodyElements: [BodyElementEnum]?
+// MARK: - CaseStudies
+struct CaseStudies: Codable {
+    let caseStudies: [CaseStudy]?
 
     enum CodingKeys: String, CodingKey {
-        case title
-        case bodyElements = "body_elements"
+        case caseStudies = "case_studies"
     }
 }
 
-// MARK: Section convenience initializers and mutators
+// MARK: CaseStudies convenience initializers and mutators
 
-extension Section {
+extension CaseStudies {
     init(data: Data) throws {
-        self = try newJSONDecoder().decode(Section.self, from: data)
+        self = try newJSONDecoder().decode(CaseStudies.self, from: data)
     }
 
     init(_ json: String, using encoding: String.Encoding = .utf8) throws {
@@ -38,12 +36,10 @@ extension Section {
     }
 
     func with(
-        title: String?? = nil,
-        bodyElements: [BodyElementEnum]?? = nil
-    ) -> Section {
-        return Section(
-            title: title ?? self.title,
-            bodyElements: bodyElements ?? self.bodyElements
+        caseStudies: [CaseStudy]?? = nil
+    ) -> CaseStudies {
+        return CaseStudies(
+            caseStudies: caseStudies ?? self.caseStudies
         )
     }
 

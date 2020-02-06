@@ -10,13 +10,13 @@ import Foundation
 
 // MARK: - CaseStudy
 struct CaseStudy: Codable {
-    let id: Int
+    let id: Int?
     let client: String?
-    let teaser, vertical: String
-    let isEnterprise: Bool
-    let title: String
-    let heroImage: String
-    let sections: [Section]
+    let teaser, vertical: String?
+    let isEnterprise: Bool?
+    let title: String?
+    let heroImage: String?
+    let sections: [Section]?
     let appStoreURL: String?
 
     enum CodingKeys: String, CodingKey {
@@ -48,14 +48,14 @@ extension CaseStudy {
     }
 
     func with(
-        id: Int? = nil,
+        id: Int?? = nil,
         client: String?? = nil,
-        teaser: String? = nil,
-        vertical: String? = nil,
-        isEnterprise: Bool? = nil,
-        title: String? = nil,
-        heroImage: String? = nil,
-        sections: [Section]? = nil,
+        teaser: String?? = nil,
+        vertical: String?? = nil,
+        isEnterprise: Bool?? = nil,
+        title: String?? = nil,
+        heroImage: String?? = nil,
+        sections: [Section]?? = nil,
         appStoreURL: String?? = nil
     ) -> CaseStudy {
         return CaseStudy(
@@ -79,3 +79,4 @@ extension CaseStudy {
         return String(data: try self.jsonData(), encoding: encoding)
     }
 }
+

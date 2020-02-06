@@ -22,6 +22,8 @@
 		4EB00B0F23EC5F340078FFEE /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B0E23EC5F340078FFEE /* Networking.swift */; };
 		4EB00B1123EC5F430078FFEE /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B1023EC5F430078FFEE /* GitHubAPI.swift */; };
 		4EB00B1323EC5F510078FFEE /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B1223EC5F510078FFEE /* EndpointType.swift */; };
+		4EB00B1723EC6B2D0078FFEE /* CaseStudies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B1623EC6B2D0078FFEE /* CaseStudies.swift */; };
+		4EB00B1A23EC6BD80078FFEE /* URLSessionTaskExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B1923EC6BD80078FFEE /* URLSessionTaskExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		4EB00B0E23EC5F340078FFEE /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		4EB00B1023EC5F430078FFEE /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 		4EB00B1223EC5F510078FFEE /* EndpointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
+		4EB00B1623EC6B2D0078FFEE /* CaseStudies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudies.swift; sourceTree = "<group>"; };
+		4EB00B1923EC6BD80078FFEE /* URLSessionTaskExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionTaskExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 			children = (
 				4EB00ABA23EC51C50078FFEE /* AppDelegate.swift */,
 				4EB00ABC23EC51C50078FFEE /* SceneDelegate.swift */,
+				4EB00B1823EC6BBA0078FFEE /* Extensions */,
 				4EB00B0D23EC5BE20078FFEE /* Helpers */,
 				4EB00AEE23EC52570078FFEE /* Networking */,
 				4EB00AED23EC524E0078FFEE /* View */,
@@ -157,6 +162,7 @@
 			children = (
 				4EB00B0123EC57C70078FFEE /* BodyElement.swift */,
 				4EB00B0523EC57C70078FFEE /* CaseStudy.swift */,
+				4EB00B1623EC6B2D0078FFEE /* CaseStudies.swift */,
 				4EB00B0623EC57C80078FFEE /* Section.swift */,
 			);
 			path = Model;
@@ -195,6 +201,14 @@
 				4EB00B0223EC57C70078FFEE /* JSONSchemaSupport.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4EB00B1823EC6BBA0078FFEE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4EB00B1923EC6BD80078FFEE /* URLSessionTaskExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EB00B1323EC5F510078FFEE /* EndpointType.swift in Sources */,
+				4EB00B1A23EC6BD80078FFEE /* URLSessionTaskExt.swift in Sources */,
 				4EB00B0C23EC57C80078FFEE /* Section.swift in Sources */,
 				4EB00B1123EC5F430078FFEE /* GitHubAPI.swift in Sources */,
 				4EB00B0823EC57C80078FFEE /* JSONSchemaSupport.swift in Sources */,
@@ -337,6 +352,7 @@
 				4EB00ABB23EC51C50078FFEE /* AppDelegate.swift in Sources */,
 				4EB00ABD23EC51C50078FFEE /* SceneDelegate.swift in Sources */,
 				4EB00B0723EC57C80078FFEE /* BodyElement.swift in Sources */,
+				4EB00B1723EC6B2D0078FFEE /* CaseStudies.swift in Sources */,
 				4EB00B0B23EC57C80078FFEE /* CaseStudy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

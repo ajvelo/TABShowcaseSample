@@ -15,9 +15,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        networking.performNetworkTask(endpoint: .caseStudies) { (success, caseStudies) in
+            if success {
+                print(caseStudies)
+            }
+        }
     }
-
-
 }
 
