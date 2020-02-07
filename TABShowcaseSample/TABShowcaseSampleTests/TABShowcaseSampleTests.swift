@@ -10,18 +10,32 @@ import XCTest
 @testable import TABShowcaseSample
 
 class TABShowcaseSampleTests: XCTestCase {
+    
+    var viewModel: CaseStudiesViewModel!
+    fileprivate var service: Networking!
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
+        self.service = Networking()
+        self.viewModel = CaseStudiesViewModel()
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+        self.viewModel = nil
+        self.service = nil
+        super.tearDown()
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testFetchWithService() {
+        viewModel.getCaseStudies {
+            if self.viewModel.count == 0 {
+                XCTAssert(false, "ViewModels successfully fetched")
+            } else {
+                XCTAssert(true, "ViewModels failed to be fetched")
+            }
+        }
     }
 
     func testPerformanceExample() {
