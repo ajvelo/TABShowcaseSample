@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E040F3223ECB7F200AE99FF /* SectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E040F3123ECB7F200AE99FF /* SectionViewModel.swift */; };
 		4EB00ABB23EC51C50078FFEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00ABA23EC51C50078FFEE /* AppDelegate.swift */; };
 		4EB00ABD23EC51C50078FFEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00ABC23EC51C50078FFEE /* SceneDelegate.swift */; };
 		4EB00ABF23EC51C50078FFEE /* CaseStudyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00ABE23EC51C50078FFEE /* CaseStudyTableViewController.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E040F3123ECB7F200AE99FF /* SectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewModel.swift; sourceTree = "<group>"; };
 		4EB00AB723EC51C50078FFEE /* TABShowcaseSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TABShowcaseSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB00ABA23EC51C50078FFEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EB00ABC23EC51C50078FFEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				4EB00B1B23EC70BA0078FFEE /* CaseStudiesViewModel.swift */,
+				4E040F3123ECB7F200AE99FF /* SectionViewModel.swift */,
 				4EB00B1D23EC720C0078FFEE /* CaseStudiesCellViewModel.swift */,
 				4EB00B2623EC8E1B0078FFEE /* CaseStudiesSectionCellViewModel.swift */,
 			);
@@ -385,6 +388,7 @@
 				4EB00B2123EC74340078FFEE /* CaseStudyTableViewCell.swift in Sources */,
 				4EB00B0723EC57C80078FFEE /* BodyElement.swift in Sources */,
 				4EB00B1723EC6B2D0078FFEE /* CaseStudies.swift in Sources */,
+				4E040F3223ECB7F200AE99FF /* SectionViewModel.swift in Sources */,
 				4EB00B0B23EC57C80078FFEE /* CaseStudy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

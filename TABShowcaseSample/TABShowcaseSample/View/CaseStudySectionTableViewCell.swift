@@ -19,14 +19,20 @@ class CaseStudySectionTableViewCell: UITableViewCell {
     public var viewModel: CaseStudiesSectionCellViewModel? {
         didSet {
             guard let viewModel = viewModel else { return }
-//            if viewModel.image != nil {
-//                let url = URL(string: viewModel.image!)
-//                if let data = try? Data(contentsOf: url!) {
-//                  heroImage.image = UIImage(data: data)
-//                }
-//            }
             titleLabel.text = viewModel.title
-            bodyTextView.text = viewModel.bodyElements?.first as? String
+            for bodyElement in viewModel.bodyElements! {
+                switch bodyElement {
+                case .string(let bodyText):
+                    bodyTextView.text = bodyText
+                case .bodyElement(let image):
+                    if image.imageURL != nil {
+                        let url = URL(string: image.imageURL!)
+                        if let data = try? Data(contentsOf: url!) {
+                          bodyImageView.image = UIImage(data: data)
+                        }
+                    }
+                }
+            }
         }
     }
 }

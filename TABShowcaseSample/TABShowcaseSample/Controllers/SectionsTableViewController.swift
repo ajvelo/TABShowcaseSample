@@ -11,15 +11,33 @@ import UIKit
 class SectionsTableViewController: UITableViewController {
     
     var sections: [Section]?
+    let viewModel = SectionViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        for section in sections! {
-            let viewmodel = CaseStudiesSectionCellViewModel(caseStudySection: section)
-            for i in viewmodel.bodyElements! {
-                print(i.self)
-            }
+        viewModel.sections = sections
+    }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.count
+    }
+
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CaseStudySectionTableViewCell.reuseIdentifier,
+                                                       for: indexPath) as? CaseStudySectionTableViewCell else {
+            return UITableViewCell()
         }
+
+        let cellViewModel = viewModel.cellViewModel(index: indexPath.row)
+        cell.viewModel = cellViewModel
+
+        return cell
     }
 }
