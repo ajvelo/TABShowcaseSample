@@ -62,20 +62,4 @@ extension BodyElement {
     init(fromURL url: URL) throws {
         try self.init(data: try Data(contentsOf: url))
     }
-
-    func with(
-        imageURL: String?? = nil
-    ) -> BodyElement {
-        return BodyElement(
-            imageURL: imageURL ?? self.imageURL
-        )
-    }
-
-    func jsonData() throws -> Data {
-        return try newJSONEncoder().encode(self)
-    }
-
-    func jsonString(encoding: String.Encoding = .utf8) throws -> String? {
-        return String(data: try self.jsonData(), encoding: encoding)
-    }
 }

@@ -31,6 +31,7 @@
 		4EB00B2323EC8C3B0078FFEE /* SectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B2223EC8C3B0078FFEE /* SectionsTableViewController.swift */; };
 		4EB00B2523EC8DD00078FFEE /* CaseStudySectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B2423EC8DD00078FFEE /* CaseStudySectionTableViewCell.swift */; };
 		4EB00B2723EC8E1B0078FFEE /* CaseStudiesSectionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00B2623EC8E1B0078FFEE /* CaseStudiesSectionCellViewModel.swift */; };
+		4ED4181623ED6CB400B07262 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4181523ED6CB400B07262 /* ThemeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		4EB00B2223EC8C3B0078FFEE /* SectionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsTableViewController.swift; sourceTree = "<group>"; };
 		4EB00B2423EC8DD00078FFEE /* CaseStudySectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudySectionTableViewCell.swift; sourceTree = "<group>"; };
 		4EB00B2623EC8E1B0078FFEE /* CaseStudiesSectionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudiesSectionCellViewModel.swift; sourceTree = "<group>"; };
+		4ED4181523ED6CB400B07262 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				4EB00B0223EC57C70078FFEE /* JSONSchemaSupport.swift */,
+				4ED4181523ED6CB400B07262 /* ThemeManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				4EB00B1A23EC6BD80078FFEE /* URLSessionTaskExt.swift in Sources */,
 				4EB00B1E23EC720C0078FFEE /* CaseStudiesCellViewModel.swift in Sources */,
 				4EB00B1C23EC70BA0078FFEE /* CaseStudiesViewModel.swift in Sources */,
+				4ED4181623ED6CB400B07262 /* ThemeManager.swift in Sources */,
 				4EB00B0C23EC57C80078FFEE /* Section.swift in Sources */,
 				4EB00B1123EC5F430078FFEE /* GitHubAPI.swift in Sources */,
 				4EB00B0823EC57C80078FFEE /* JSONSchemaSupport.swift in Sources */,

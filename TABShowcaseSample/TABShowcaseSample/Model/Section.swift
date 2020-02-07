@@ -36,22 +36,4 @@ extension Section {
     init(fromURL url: URL) throws {
         try self.init(data: try Data(contentsOf: url))
     }
-
-    func with(
-        title: String?? = nil,
-        bodyElements: [BodyElementEnum]?? = nil
-    ) -> Section {
-        return Section(
-            title: title ?? self.title,
-            bodyElements: bodyElements ?? self.bodyElements
-        )
-    }
-
-    func jsonData() throws -> Data {
-        return try newJSONEncoder().encode(self)
-    }
-
-    func jsonString(encoding: String.Encoding = .utf8) throws -> String? {
-        return String(data: try self.jsonData(), encoding: encoding)
-    }
 }

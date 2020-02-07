@@ -20,15 +20,27 @@ class CaseStudyTableViewCell: UITableViewCell {
     public var viewModel: CaseStudiesCellViewModel? {
         didSet {
             guard let viewModel = viewModel else { return }
-            if viewModel.image != nil {
-                let url = URL(string: viewModel.image!)
-                if let data = try? Data(contentsOf: url!) {
-                  heroImage.image = UIImage(data: data)
-                }
+            if let url = viewModel.image {
+                do {
+                    let data = try Data(contentsOf: URL(string: url)!)
+                    let image = UIImage(data: data)
+                    DispatchQueue.main.async { [weak self] in
+                        self?.heroImage.image = image
+                    }
+                } catch _ { }
             }
             teaserLabel.text = viewModel.teaser
             titleLabel.text = viewModel.title
             clientLabel.text = viewModel.client
+        }
+    }
+    
+    func getImage(str: String) -> UIImage? {
+        let url = URL(string: str)
+        if let data = try? Data(contentsOf: url!) {
+            return UIImage(data: data)!
+        } else {
+            return nil
         }
     }
 }

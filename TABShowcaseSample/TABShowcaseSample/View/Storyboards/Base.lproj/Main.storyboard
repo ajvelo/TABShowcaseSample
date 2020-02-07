@@ -32,7 +32,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Client" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHT-xF-6ES">
                                             <rect key="frame" x="148" y="27" width="79.5" height="51"/>
                                             <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="28"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="0.0" alpha="0.75" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="fjweoifjewofiwjfoewifjewofijewfoeiwjfeowifjewofejioewifjewofijwe" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mw1-yl-v6m">
@@ -41,7 +41,7 @@
                                                 <constraint firstAttribute="width" secondItem="Mw1-yl-v6m" secondAttribute="height" multiplier="6:1" id="hxe-5j-o6Z"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="0.0" alpha="0.75" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="pergjeroigjerogijreogierjeroigjreogijoriregwefipjwepfijewfiewjfeowifjewfoiwj" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8J-0d-hyQ">
@@ -50,7 +50,7 @@
                                                 <constraint firstAttribute="width" secondItem="I8J-0d-hyQ" secondAttribute="height" multiplier="30:6" id="ymc-Kq-FRm"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="AvenirNext-MediumItalic" family="Avenir Next" pointSize="18"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="0.0" alpha="0.75" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -70,7 +70,7 @@
                                         <constraint firstItem="lHT-xF-6ES" firstAttribute="top" secondItem="cvj-pX-kOq" secondAttribute="topMargin" constant="16" id="y5C-jx-MbL"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="0.24860873287671234" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="clientLabel" destination="lHT-xF-6ES" id="EpU-a3-9vr"/>
                                     <outlet property="heroImage" destination="X8K-eb-meb" id="s5f-8n-zcq"/>
@@ -100,34 +100,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CaseStudySectionTableViewCell" rowHeight="472" id="qlS-a5-UIw" customClass="CaseStudySectionTableViewCell" customModule="TABShowcaseSample" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="472"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CaseStudySectionTableViewCell" rowHeight="527" id="qlS-a5-UIw" customClass="CaseStudySectionTableViewCell" customModule="TABShowcaseSample" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="527"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qlS-a5-UIw" id="Psb-w3-nCD">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="472"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="527"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZL-nw-bNk">
-                                            <rect key="frame" x="16" y="27" width="339" height="70.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZL-nw-bNk">
+                                            <rect key="frame" x="16" y="27" width="339" height="56.5"/>
+                                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hv-Fg-HHt">
-                                            <rect key="frame" x="20" y="105.5" width="335" height="202.5"/>
+                                            <rect key="frame" x="20" y="91.5" width="335" height="252.5"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="1Hv-Fg-HHt" secondAttribute="height" multiplier="300:181" id="IZ2-BY-5kM"/>
+                                                <constraint firstAttribute="width" secondItem="1Hv-Fg-HHt" secondAttribute="height" multiplier="240:181" id="IZ2-BY-5kM"/>
                                             </constraints>
-                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <mutableString key="text">With 1.34 billion passengers a year, the Tube is an intrinsic part of London life. Any disruptions, however small, to this essential service can cause a ripple effect that is felt not just on the network, but across the city itself.",
+"Examples of this can be seen in surprising places. Take brake testing. Each time a Tube train is suspected of faulty brakes, it is removed from service to be tested. This is because, in order to see if brakes are working as intended, the existing testing technology requires the train to be brought to a complete stop. The Underground’s tight schedule means if the train were left in service during this process, severe delays would occur across the line.",
+"However, what if the train’s brakes turn out to be working just fine? Removing a train from service has still proved disruptive to passengers, and incurred costs for TfL. In 2015, over a quarter of Tube trains removed for testing on just three Underground lines were actually found to be fault-free. Scale this up across all lines, and the impact to both engineering time and lost passenger hours becomes a sizeable problem.</mutableString>
                                             <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="18"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4s2-Yi-nD5">
-                                            <rect key="frame" x="20" y="324" width="335" height="153"/>
+                                            <rect key="frame" x="20" y="360" width="335" height="140"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="4s2-Yi-nD5" secondAttribute="height" multiplier="35:16" id="8Wx-Dc-JSS"/>
+                                                <constraint firstAttribute="height" constant="140" id="Sd7-6l-yzy"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
@@ -135,13 +137,13 @@
                                         <constraint firstItem="FZL-nw-bNk" firstAttribute="top" secondItem="Psb-w3-nCD" secondAttribute="topMargin" constant="16" id="739-hA-4kc"/>
                                         <constraint firstItem="FZL-nw-bNk" firstAttribute="leading" secondItem="Psb-w3-nCD" secondAttribute="leadingMargin" id="BCH-vf-yBc"/>
                                         <constraint firstItem="4s2-Yi-nD5" firstAttribute="top" secondItem="1Hv-Fg-HHt" secondAttribute="bottom" constant="16" id="I8y-vf-Ku8"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="4s2-Yi-nD5" secondAttribute="bottom" constant="16" id="KOE-a9-pNa"/>
                                         <constraint firstItem="1Hv-Fg-HHt" firstAttribute="leading" secondItem="4s2-Yi-nD5" secondAttribute="leading" id="LIg-2K-YJZ"/>
                                         <constraint firstAttribute="trailing" secondItem="1Hv-Fg-HHt" secondAttribute="trailing" constant="20" symbolic="YES" id="N16-VR-Sd3"/>
                                         <constraint firstItem="4s2-Yi-nD5" firstAttribute="leading" secondItem="Psb-w3-nCD" secondAttribute="leading" constant="20" symbolic="YES" id="Qnx-wk-iwi"/>
                                         <constraint firstItem="1Hv-Fg-HHt" firstAttribute="top" secondItem="FZL-nw-bNk" secondAttribute="bottom" constant="8" id="WKz-dd-jIB"/>
                                         <constraint firstItem="1Hv-Fg-HHt" firstAttribute="trailing" secondItem="FZL-nw-bNk" secondAttribute="trailing" id="a1f-GQ-qLU"/>
                                         <constraint firstItem="1Hv-Fg-HHt" firstAttribute="leading" secondItem="Psb-w3-nCD" secondAttribute="leading" constant="20" symbolic="YES" id="gAT-Dr-Q8L"/>
-                                        <constraint firstItem="4s2-Yi-nD5" firstAttribute="bottom" secondItem="Psb-w3-nCD" secondAttribute="bottomMargin" constant="16" id="kDL-Kh-HMO"/>
                                         <constraint firstAttribute="trailing" secondItem="4s2-Yi-nD5" secondAttribute="trailing" constant="20" symbolic="YES" id="wgi-o2-mJg"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -161,7 +163,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tfo-as-zrN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2505" y="43"/>
+            <point key="canvasLocation" x="2504.8000000000002" y="42.728635682158924"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Gc4-jo-th3">

@@ -34,20 +34,4 @@ extension CaseStudies {
     init(fromURL url: URL) throws {
         try self.init(data: try Data(contentsOf: url))
     }
-
-    func with(
-        caseStudies: [CaseStudy]?? = nil
-    ) -> CaseStudies {
-        return CaseStudies(
-            caseStudies: caseStudies ?? self.caseStudies
-        )
-    }
-
-    func jsonData() throws -> Data {
-        return try newJSONEncoder().encode(self)
-    }
-
-    func jsonString(encoding: String.Encoding = .utf8) throws -> String? {
-        return String(data: try self.jsonData(), encoding: encoding)
-    }
 }

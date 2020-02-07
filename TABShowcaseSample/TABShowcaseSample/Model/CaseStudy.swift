@@ -46,37 +46,5 @@ extension CaseStudy {
     init(fromURL url: URL) throws {
         try self.init(data: try Data(contentsOf: url))
     }
-
-    func with(
-        id: Int?? = nil,
-        client: String?? = nil,
-        teaser: String?? = nil,
-        vertical: String?? = nil,
-        isEnterprise: Bool?? = nil,
-        title: String?? = nil,
-        heroImage: String?? = nil,
-        sections: [Section]?? = nil,
-        appStoreURL: String?? = nil
-    ) -> CaseStudy {
-        return CaseStudy(
-            id: id ?? self.id,
-            client: client ?? self.client,
-            teaser: teaser ?? self.teaser,
-            vertical: vertical ?? self.vertical,
-            isEnterprise: isEnterprise ?? self.isEnterprise,
-            title: title ?? self.title,
-            heroImage: heroImage ?? self.heroImage,
-            sections: sections ?? self.sections,
-            appStoreURL: appStoreURL ?? self.appStoreURL
-        )
-    }
-
-    func jsonData() throws -> Data {
-        return try newJSONEncoder().encode(self)
-    }
-
-    func jsonString(encoding: String.Encoding = .utf8) throws -> String? {
-        return String(data: try self.jsonData(), encoding: encoding)
-    }
 }
 

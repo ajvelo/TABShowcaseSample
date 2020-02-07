@@ -13,7 +13,7 @@ class CaseStudySectionTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bodyTextView: UITextView!
     @IBOutlet weak var bodyImageView: UIImageView!
-    
+    var totalBodyText = ""
     public static let reuseIdentifier = "CaseStudySectionTableViewCell"
 
     public var viewModel: CaseStudiesSectionCellViewModel? {
@@ -23,7 +23,7 @@ class CaseStudySectionTableViewCell: UITableViewCell {
             for bodyElement in viewModel.bodyElements! {
                 switch bodyElement {
                 case .string(let bodyText):
-                    bodyTextView.text = bodyText
+                    totalBodyText.append(bodyText)
                 case .bodyElement(let image):
                     if image.imageURL != nil {
                         let url = URL(string: image.imageURL!)
@@ -33,6 +33,7 @@ class CaseStudySectionTableViewCell: UITableViewCell {
                     }
                 }
             }
+            bodyTextView.text = totalBodyText
         }
     }
 }
