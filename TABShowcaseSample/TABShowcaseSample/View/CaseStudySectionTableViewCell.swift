@@ -35,6 +35,7 @@ class CaseStudySectionTableViewCell: UITableViewCell {
     }
     
     override func prepareForReuse() {
+        super.prepareForReuse()
         bodyImageView.image = nil
         titleLabel.text = nil
         bodyTextView.text = nil

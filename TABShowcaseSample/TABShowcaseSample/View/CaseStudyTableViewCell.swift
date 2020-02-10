@@ -30,6 +30,7 @@ class CaseStudyTableViewCell: UITableViewCell {
     }
     
     override func prepareForReuse() {
+        super.prepareForReuse()
         heroImage.image = nil
         teaserLabel.text = nil
         titleLabel.text = nil
