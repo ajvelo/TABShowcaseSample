@@ -21,7 +21,9 @@ class CaseStudyTableViewCell: UITableViewCell {
         didSet {
             guard let viewModel = viewModel else { return }
             if let url = viewModel.image {
-                heroImage.loadImage(fromURL: url)
+                heroImage.loadImage(fromURL: url) { [weak self] (image) in
+                    self?.heroImage.image = image
+                }
             }
             teaserLabel.text = viewModel.teaser
             titleLabel.text = viewModel.title

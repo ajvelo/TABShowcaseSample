@@ -26,7 +26,9 @@ class CaseStudySectionTableViewCell: UITableViewCell {
                     totalBodyText.append(bodyText)
                 case .bodyElement(let image):
                     if image.imageURL != nil {
-                        bodyImageView?.loadImage(fromURL: image.imageURL!)
+                        bodyImageView?.loadImage(fromURL: image.imageURL!, completion: { [weak self] (image) in
+                            self?.bodyImageView.image = image
+                        })
                     }
                 }
             }
