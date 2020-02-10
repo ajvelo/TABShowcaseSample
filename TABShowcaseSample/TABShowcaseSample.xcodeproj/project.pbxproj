@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E040F3223ECB7F200AE99FF /* SectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E040F3123ECB7F200AE99FF /* SectionViewModel.swift */; };
+		4E9A059223F17A2900BDFA1C /* UIImageViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9A059123F17A2900BDFA1C /* UIImageViewExt.swift */; };
 		4EB00ABB23EC51C50078FFEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00ABA23EC51C50078FFEE /* AppDelegate.swift */; };
 		4EB00ABD23EC51C50078FFEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00ABC23EC51C50078FFEE /* SceneDelegate.swift */; };
 		4EB00ABF23EC51C50078FFEE /* CaseStudyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB00ABE23EC51C50078FFEE /* CaseStudyTableViewController.swift */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		4E040F3123ECB7F200AE99FF /* SectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewModel.swift; sourceTree = "<group>"; };
+		4E9A059123F17A2900BDFA1C /* UIImageViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExt.swift; sourceTree = "<group>"; };
 		4EB00AB723EC51C50078FFEE /* TABShowcaseSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TABShowcaseSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB00ABA23EC51C50078FFEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EB00ABC23EC51C50078FFEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				4EB00B1923EC6BD80078FFEE /* URLSessionTaskExt.swift */,
+				4E9A059123F17A2900BDFA1C /* UIImageViewExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				4EB00B1A23EC6BD80078FFEE /* URLSessionTaskExt.swift in Sources */,
 				4EB00B1E23EC720C0078FFEE /* CaseStudiesCellViewModel.swift in Sources */,
 				4EB00B1C23EC70BA0078FFEE /* CaseStudiesViewModel.swift in Sources */,
+				4E9A059223F17A2900BDFA1C /* UIImageViewExt.swift in Sources */,
 				4ED4181623ED6CB400B07262 /* ThemeManager.swift in Sources */,
 				4EB00B0C23EC57C80078FFEE /* Section.swift in Sources */,
 				4EB00B1123EC5F430078FFEE /* GitHubAPI.swift in Sources */,

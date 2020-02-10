@@ -26,14 +26,17 @@ class CaseStudySectionTableViewCell: UITableViewCell {
                     totalBodyText.append(bodyText)
                 case .bodyElement(let image):
                     if image.imageURL != nil {
-                        let url = URL(string: image.imageURL!)
-                        if let data = try? Data(contentsOf: url!) {
-                          bodyImageView.image = UIImage(data: data)
-                        }
+                        bodyImageView?.loadImage(fromURL: image.imageURL!)
                     }
                 }
             }
             bodyTextView.text = totalBodyText
         }
+    }
+    
+    override func prepareForReuse() {
+        bodyImageView.image = nil
+        titleLabel.text = nil
+        bodyTextView.text = nil
     }
 }

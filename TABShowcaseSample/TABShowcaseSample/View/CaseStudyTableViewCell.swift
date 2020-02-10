@@ -21,13 +21,7 @@ class CaseStudyTableViewCell: UITableViewCell {
         didSet {
             guard let viewModel = viewModel else { return }
             if let url = viewModel.image {
-                do {
-                    let data = try Data(contentsOf: URL(string: url)!)
-                    let image = UIImage(data: data)
-                    DispatchQueue.main.async { [weak self] in
-                        self?.heroImage.image = image
-                    }
-                } catch _ { }
+                heroImage.loadImage(fromURL: url)
             }
             teaserLabel.text = viewModel.teaser
             titleLabel.text = viewModel.title
@@ -35,12 +29,10 @@ class CaseStudyTableViewCell: UITableViewCell {
         }
     }
     
-    func getImage(str: String) -> UIImage? {
-        let url = URL(string: str)
-        if let data = try? Data(contentsOf: url!) {
-            return UIImage(data: data)!
-        } else {
-            return nil
-        }
+    override func prepareForReuse() {
+        heroImage.image = nil
+        teaserLabel.text = nil
+        titleLabel.text = nil
+        clientLabel.text = nil
     }
 }
